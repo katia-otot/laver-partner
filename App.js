@@ -1,20 +1,26 @@
+// App.js
+import React, { useEffect } from 'react';
+import { SafeAreaView, Text, StyleSheet } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { getApp } from '@react-native-firebase/app'; 
 
 export default function App() {
+  useEffect(() => {
+    // simple sanity check: should print your appId & projectId
+    const app = getApp();
+    console.log('Firebase initialized:', app.options.appId, app.options.projectId);
+  }, []);
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <SafeAreaView style={styles.container}>
+      <Text style={styles.title}>Hello, world 👋</Text>
       <StatusBar style="auto" />
-    </View>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  container: { flex: 1, alignItems: 'center', justifyContent: 'center' },
+  title: { fontSize: 28, fontWeight: '700' },
 });
+
