@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { SafeAreaView, Text, StyleSheet } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { getApp } from '@react-native-firebase/app'; 
+import { UpdateChecker } from './src/features/ota/components/UpdateChecker'
 
 export default function App() {
   useEffect(() => {
@@ -13,6 +14,7 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
+       <UpdateChecker />
       <Text style={styles.title}>Hello, world 👋</Text>
       <StatusBar style="auto" />
     </SafeAreaView>

@@ -7,14 +7,17 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+
+    "runtimeVersion": "1.0.0",
+
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "ios": {
-      "supportsTablet": true
-    },
+
+    "ios": { "supportsTablet": true },
+
     "android": {
       "package": "com.init0.laver.partner",
       "googleServicesFile": "./google-services.json",
@@ -24,15 +27,26 @@
       },
       "edgeToEdgeEnabled": true
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
+
+    "web": { "favicon": "./assets/favicon.png" },
+
     "plugins": [
+      "expo-updates",
       "@react-native-firebase/app",
       [
         "expo-build-properties",
         { "ios": { "useFrameworks": "static" } }
       ]
-    ]
+    ],
+
+    "updates": {
+      "url": "https://u.expo.dev/90871d1f-f7a1-45b7-bd62-1a74f7ee9333"
+    },
+
+    "owner": "katotot",
+    "extra": {
+      "eas": { "projectId": "90871d1f-f7a1-45b7-bd62-1a74f7ee9333" }
+    }
+
   }
 }
