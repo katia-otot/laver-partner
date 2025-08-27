@@ -8,8 +8,6 @@
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
 
-    "runtimeVersion": "1.0.0",
-
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
@@ -38,6 +36,8 @@
         { "ios": { "useFrameworks": "static" } }
       ]
     ],
+
+    "runtimeVersion": "1.0.0",
 
     "updates": {
       "url": "https://u.expo.dev/90871d1f-f7a1-45b7-bd62-1a74f7ee9333"
