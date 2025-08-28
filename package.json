@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@react-native-firebase/app": "^23.1.0",
-    "expo": "~53.0.20",
+    "expo": "53.0.22",
     "expo-build-properties": "~0.14.8",
     "expo-status-bar": "~2.2.3",
     "expo-updates": "^0.28.17",
@@ -18,8 +18,7 @@
     "react-native": "0.79.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0",
-    "eas-cli": "^16.17.4"
+    "@babel/core": "^7.20.0"
   },
   "private": true
 }
