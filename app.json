@@ -2,6 +2,8 @@
   "expo": {
     "name": "laver-partner",
     "slug": "laver-partner",
+    "owner": "katotot",
+
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -30,11 +32,7 @@
 
     "plugins": [
       "expo-updates",
-      "@react-native-firebase/app",
-      [
-        "expo-build-properties",
-        { "ios": { "useFrameworks": "static" } }
-      ]
+      ["expo-build-properties", { "ios": { "useFrameworks": "static" } }]
     ],
 
     "runtimeVersion": "1.0.0",
@@ -43,7 +41,6 @@
       "url": "https://u.expo.dev/90871d1f-f7a1-45b7-bd62-1a74f7ee9333"
     },
 
-    "owner": "katotot",
     "extra": {
       "eas": { "projectId": "90871d1f-f7a1-45b7-bd62-1a74f7ee9333" }
     }
