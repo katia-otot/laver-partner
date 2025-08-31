@@ -40,5 +40,6 @@ yarn-error.*
 bun.lock
 
 android/
+ios/
 
 app-example
