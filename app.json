@@ -3,6 +3,7 @@
     "name": "laver-partner",
     "slug": "laver-partner",
     "owner": "katotot",
+    "scheme": "laverpartner",
 
     "version": "1.0.0",
     "orientation": "portrait",
